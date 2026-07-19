@@ -1,3 +1,4 @@
+# 1. Write a Python program that counts the occurrences of each character in a given string.
 try:
     txt = input("Enter text : ")
     count = {}

@@ -1,3 +1,4 @@
+# 2. Write a program that initializes a list, appends an element, removes an element, checks for a specific element, and prints the modified list.
 try:
     num = [1,2,3,4,5]
 
