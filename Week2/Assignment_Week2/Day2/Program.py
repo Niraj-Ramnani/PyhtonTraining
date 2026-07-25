@@ -123,8 +123,9 @@ def main():
 
 
     library = Library()
-
-    member = Member(1, "Rahul")
+    print("Creating a member for library : ")
+    name = input("enter your name ")
+    member = Member(1, name)
     library.add_member(member)
 
     while True:
