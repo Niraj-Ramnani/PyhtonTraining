@@ -1,3 +1,8 @@
+"""
+2. Develop a Bank Transaction Simulator supporting Deposit, Withdraw and Balance Inquiry.
+Handle invalid input, negative values, division/logic errors and create a custom exception named
+
+"""
 class InsufficientBalanceError(Exception):
     """exception for insufficient balance."""
     pass
