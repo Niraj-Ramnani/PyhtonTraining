@@ -16,12 +16,12 @@ class LibraryItem(ABC):
 
     @abstractmethod
     def issue_item(self):
-        """Issue the library items"""
+        # Issue the library items
         pass
 
     @abstractmethod
     def return_item(self):
-        """Return the library items"""
+        # Return the library items
         pass
 
 
@@ -212,7 +212,7 @@ def main():
 
         try:
 
-            print("\n===== Library Menu =====")
+            print("\n---Library Menu ---")
             print("1. Add Printed Book")
             print("2. Add EBook")
             print("3. Add AudioBook")
