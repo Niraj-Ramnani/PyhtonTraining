@@ -37,8 +37,8 @@ POST /register
 
 ```json
 {
-    "name": "Rahul",
-    "email": "rahul@gmail.com",
+    "name": "user1",
+    "email": "user1@gmail.com",
     "password": "123456"
 }
 ```
@@ -91,7 +91,7 @@ POST /login
 
 ```json
 {
-    "email": "rahul@gmail.com",
+    "email": "user1@gmail.com",
     "password": "123456"
 }
 ```
@@ -163,8 +163,8 @@ Response:
 ```json
 {
     "id": 1,
-    "name": "Rahul",
-    "email": "rahul@gmail.com"
+    "name": "user1",
+    "email": "user1@gmail.com"
 }
 ```
 
@@ -194,7 +194,7 @@ Authorization: Bearer JWT_TOKEN
 
 ```json
 {
-    "name": "Food Palace"
+    "name": "Food Restaurant"
 }
 ```
 
@@ -211,7 +211,7 @@ Response:
 ```json
 {
     "id": 1,
-    "name": "Food Palace"
+    "name": "Food Restaurant"
 }
 ```
 
@@ -241,7 +241,7 @@ Example:
 [
     {
         "id": 1,
-        "name": "Food Palace"
+        "name": "Food Restaurant"
     }
 ]
 ```
@@ -305,7 +305,7 @@ Authorization: Bearer JWT_TOKEN
 ```json
 {
     "restaurant_id": 1,
-    "name": "Burger",
+    "name": "Food Item 1",
     "price": 150
 }
 ```
@@ -324,7 +324,7 @@ Response:
 {
     "id": 1,
     "restaurant_id": 1,
-    "name": "Burger",
+    "name": "Food Item 1",
     "price": 150
 }
 ```
@@ -367,7 +367,7 @@ Example:
     {
         "id": 1,
         "restaurant_id": 1,
-        "name": "Burger",
+        "name": "Food Item 1",
         "price": 150
     }
 ]
