@@ -1,6 +1,5 @@
 -- Q13: Database Triggers
 
--- 1. Update restaurant revenue after successful payments.
 
 CREATE OR REPLACE FUNCTION fn_update_restaurant_revenue()
 RETURNS TRIGGER
@@ -52,7 +51,6 @@ FOR EACH ROW
 EXECUTE FUNCTION fn_update_restaurant_revenue();
 
 
--- 2. Reduce food inventory after an order.
 
 CREATE OR REPLACE FUNCTION fn_reduce_inventory()
 RETURNS TRIGGER
@@ -82,7 +80,7 @@ FOR EACH ROW
 EXECUTE FUNCTION fn_reduce_inventory();
 
 
--- 3. Prevent deletion of restaurants with pending orders.
+
 
 CREATE OR REPLACE FUNCTION fn_prevent_pending_restaurant_delete()
 RETURNS TRIGGER
@@ -118,7 +116,6 @@ FOR EACH ROW
 EXECUTE FUNCTION fn_prevent_pending_restaurant_delete();
 
 
--- 4. Maintain an audit log for deleted food items.
 
 CREATE OR REPLACE FUNCTION fn_audit_deleted_food_item()
 RETURNS TRIGGER

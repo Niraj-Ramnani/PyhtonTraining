@@ -1,4 +1,3 @@
-
 SELECT
     r.restaurant_id,
     r.name AS restaurant_name,
