@@ -1,0 +1,32 @@
+.cart-summary {
+  position: sticky;
+  top: 20px;
+}
+
+.cart-empty {
+  color: #888;
+  font-size: 14px;
+}
+
+.cart-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.cart-remove {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  margin: 10px 0;
+  padding-top: 10px;
+}

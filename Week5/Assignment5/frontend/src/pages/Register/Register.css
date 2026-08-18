@@ -1,0 +1,38 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.register-form {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register-form label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.register-form .btn {
+  margin-top: 12px;
+}
+
+.success-text {
+  color: #2e7d32;
+  font-size: 14px;
+}
+
+.register-switch {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-switch a {
+  color: #ff5722;
+  font-weight: 600;
+}

@@ -1,0 +1,27 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.profile-form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-form label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.profile-form .btn {
+  margin-top: 12px;
+}
+
+.success-text {
+  color: #2e7d32;
+  font-size: 14px;
+}

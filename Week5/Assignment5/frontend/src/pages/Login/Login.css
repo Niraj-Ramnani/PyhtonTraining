@@ -1,0 +1,33 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.login-form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.login-form .btn {
+  margin-top: 12px;
+}
+
+.login-switch {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-switch a {
+  color: #ff5722;
+  font-weight: 600;
+}
