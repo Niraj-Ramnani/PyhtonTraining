@@ -1,0 +1,28 @@
+# Fast API
+
+- FastAPI basics and project setup
+- Routes and path operations
+- Path parameters and query parameters
+- Request body
+- **Pydantic models and validation**
+- Response models
+- HTTP status codes
+- Dependency Injection
+- Exception handling
+- Custom exceptions
+- Middleware
+- Database integration with PostgreSQL
+- SQLAlchemy / async database operations
+- Authentication
+- JWT access tokens
+- **Refresh tokens**
+- Protected routes and authorization
+- CORS
+- File uploads
+- Background tasks
+- WebSockets
+- Project structure
+- Environment variables
+- API versioning
+- Testing
+- Building a complete production-style API
