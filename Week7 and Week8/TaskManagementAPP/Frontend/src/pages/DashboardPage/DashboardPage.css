@@ -1,0 +1,162 @@
+.dashboard {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.dashboard__main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+/* Header */
+.dashboard__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.dashboard__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 4px;
+}
+
+.dashboard__subtitle {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.dashboard__add-btn {
+  padding: 9px 20px;
+  background: #4f6ef7;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.dashboard__add-btn:hover {
+  background: #3a57e0;
+}
+
+/* Filters */
+.dashboard__filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.dashboard__filter-btn {
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #fff;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s;
+}
+
+.dashboard__filter-btn:hover {
+  border-color: #4f6ef7;
+  color: #4f6ef7;
+}
+
+.dashboard__filter-btn--active {
+  background: #4f6ef7;
+  border-color: #4f6ef7;
+  color: #fff;
+}
+
+.dashboard__filter-btn--active:hover {
+  background: #3a57e0;
+  color: #fff;
+}
+
+.dashboard__filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.dashboard__filter-btn:not(.dashboard__filter-btn--active) .dashboard__filter-count {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+/* Error */
+.dashboard__error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #dc2626;
+  margin-bottom: 16px;
+}
+
+/* Loading */
+.dashboard__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 60px 0;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Empty state */
+.dashboard__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 60px 0;
+  color: #94a3b8;
+}
+
+.dashboard__empty-icon {
+  font-size: 48px;
+}
+
+.dashboard__empty p {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Task list */
+.dashboard__task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .dashboard__header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .dashboard__add-btn {
+    width: 100%;
+  }
+}
