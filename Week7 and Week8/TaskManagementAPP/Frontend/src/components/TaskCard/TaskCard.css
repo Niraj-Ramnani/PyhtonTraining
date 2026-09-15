@@ -1,0 +1,143 @@
+.task-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px 20px;
+  transition: box-shadow 0.15s, opacity 0.15s;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.task-card--done {
+  opacity: 0.7;
+  background: #f9fafb;
+}
+
+/* Checkbox */
+.task-card__checkbox {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+  color: #fff;
+  transition: background 0.15s, border-color 0.15s;
+  margin-top: 2px;
+}
+
+.task-card__checkbox--checked {
+  background: #4f6ef7;
+  border-color: #4f6ef7;
+}
+
+.task-card__checkbox:hover {
+  border-color: #4f6ef7;
+}
+
+/* Body */
+.task-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.task-card__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.task-card--done .task-card__title {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.task-card__description {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Actions */
+.task-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.task-card__badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.task-card__badge--done {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.task-card__badge--pending {
+  background: #fef9c3;
+  color: #a16207;
+}
+
+.task-card__btn {
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border: 1px solid transparent;
+}
+
+.task-card__btn--edit {
+  background: #eff6ff;
+  color: #4f6ef7;
+  border-color: #bfdbfe;
+}
+
+.task-card__btn--edit:hover {
+  background: #dbeafe;
+}
+
+.task-card__btn--delete {
+  background: #fef2f2;
+  color: #ef4444;
+  border-color: #fecaca;
+}
+
+.task-card__btn--delete:hover {
+  background: #fee2e2;
+}
+
+@media (max-width: 600px) {
+  .task-card {
+    flex-wrap: wrap;
+  }
+  .task-card__actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
